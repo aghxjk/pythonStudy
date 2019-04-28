@@ -36,7 +36,7 @@ print('"tt is mm" is {0}'.format(tt is mm))
 ##################################
 
 str1 = ''                                      # 空字符串
-str2 = "Tom's cat"                             # 双引号与单引号
+str2 = "Hello Tom's cat"                       # 双引号与单引号
 str3 = u"abc"                                  # Unicode编码
 strRaw = r'C:\new\test.txt'                    # 字符串不会被转义,否则输出时会被转义为换行符和制表符
 print('>>>>字符串合并操作:')
@@ -68,15 +68,33 @@ print('My {conf[spam]} runs {sys.platform}'.format(sys=sys, conf={'spam': 'lapto
 
 print('-' * 24)
 print('>>>> 字符其它操作:')
-strFind = strMerge.find('Tom')                 # 字符串查找，返回：True or false
+strFind = strMerge.find('Tom')                 # 字符串查找，返回查找字符串的最新索引
+print('strFind = {0}'.format(strFind))
+
 strStrip = str2.replace(' ', ':')              # 字符串替换
+print('strStrip = {0}'.format(strStrip))
+
 strSplit = str2.split()                        # 字符串分隔
-strNumTest = str2.isdigit()                    # 字符串是否为数字
+print('strSplit = {0}'.format(strSplit))
+
+strNumTest = str2.isdigit()                    # 字符串是否为数字,返回:True or False
+print('strNumTest = {0}'.format(strNumTest))
+
 strLower = str2.lower()                        # 字符串大小写切换
-strEndTest = str2.endswith('cat')              # 结束测试
-strStartTest = str2.startswith('Tom')          # 开始测试
+print('strLower = {0}'.format(strLower))
+
+strEndTest = str2.endswith('cat')              # 结束测试,返回:True or False
+print('strEndTest = {0}'.format(strEndTest))
+
+strStartTest = str2.startswith('Tom')          # 开始测试,返回:True or False
+print('strStartTest = {0}'.format(strStartTest))
+
 strJoin = '-'.join(str3)                       # 插入分隔符
+print('strJoin = {0}'.format(strJoin))
+
 strEncode = str3.encode('utf-8')               # 字符编码
+print('strEncode = {0}'.format(strEncode))
+
 str2int = int('123')                           # 字符串转换成数值
 int2str = str(123)                             # 数值转换成字符串
 str2float = float('1.5')                       # 数值转换成字符串
@@ -84,6 +102,7 @@ int2Ascii = chr(97)                            # 数值转换成ASCII
 Ascii2int = ord('a')                           # ASCII转换成int
 
 isInStr = 'Tom' in str2                        # 判断str2中是否包含'Tom'字符串,isInStr = true or false
+print('isInStr = {0}'.format(isInStr))
 
 print([c * 2 for c in str3])                 # 迭代操作
 print(map(ord, str3))                        # ASCII转换成对应的字符编码
