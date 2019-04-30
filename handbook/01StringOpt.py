@@ -111,6 +111,18 @@ template = 'hello: {name}, welcome to {city}'  # 字符串模板与格式化
 tmp = template.format(name='Chris', city='Beijing')
 print(tmp)
 
+##################################
+#    字符串模式匹配
+##################################
+import re
+
+print('-' * 24)
+match = re.match('/(.*)/(.*)/(.*)', '/usr/home/lumberjack')
+print(match.group(1))
+print(match.group(2))
+print(match.group(3))
+print(match.groups())
+
 
 # 总结
 # 1.Python没有像C语言那样的单个字符这种类型,取而代之的是单个字符的字符串;
@@ -121,3 +133,18 @@ print(tmp)
 # 备注:
 # 1.动态类型概念: Python是一个动态类型的语言,而且最大的特点就是对象型语言.
 # 即:Python所有的数据基本都以对象存在,且每一个对象都标识了自己的类型;
+
+# str的特定方法
+"""
+     1. str.find()                         未找到情况下返回 -1; 或返回传入子串的偏移量
+     2. str.replace(old, new, count=-1)    count=-1默认对全局进行搜索和替换,也可通过count指定替换的次数
+     3. str.split(',')                     按指定字符将字符串分割成字符串数组
+     4. str.upper()                        返回一个转换为大写字符串的拷贝
+     5. str.isalpha()                      判断一个字符串是否为纯字符
+     6. str.rstrip()                       删除字符串右侧空格
+     7. str.lstrip()                       删除字符串左侧空格
+     8. str.strip()                        删除字符串左右两侧空格
+     9. dir(str)                           显示Python对象相关调用方法和实现细节
+     10. help(str.replace)                 查看字符串replace函数的使用方法
+"""
+
