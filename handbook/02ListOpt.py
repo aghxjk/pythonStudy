@@ -43,17 +43,17 @@ print('\n')
 print('>>>>>>>>基本操作:')
 print('list2 =', list2)
 list2.append('end')
-print("list2.append('t') =", list2)
+print("list2.append('end') =", list2)
 list2.insert(1, 'y')
 print("list2.insert(1, 'y') =", list2)
-print("list2.index('t') =", list2.index('t') if 't' in list2 else 'not Found')                      # 查询't'所在的索引位置
-print("list2.count('t') =", list2.count('end'))                      # 统计't'出现的次数
+print("list2.index('t') =", list2.index('t') if 't' in list2 else 'not Found')     # 查询't'所在的索引位置
+print("list2.count('t') =", list2.count('end'))                                    # 统计't'出现的次数
 
 print('\n')
 print('>>>>>>>>list排序:')
 # Python2 可以对list中的str和int进行混排
 # python3 list中的str和int不能混合排序,会抛异常;可参考如下转化
-list2.sort(key=lambda x: str(x) if type(x) is int else x)                                 # 排序
+list2.sort(key=lambda x: str(x) if type(x) is int else x)                           # 排序
 print('list2.sort() =', list2)
 list2.reverse()
 print('list2.reverse() = ', list2)                              # 翻转
@@ -77,7 +77,7 @@ del list2[0:2]                               # 删除前两个
 print('del list2[0:2] =', list2)
 list2.pop(1)                                 # 删除索引为1的值
 print('list2.pop(1) =', list2)
-list2.remove(3)                            # 删除值数据3
+list2.remove(3)                              # 删除值数据3
 print('list2.remove(3) =', list2)
 list2 = [0, 1, 2, 3]
 print('list2 =', list2)

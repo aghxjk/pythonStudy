@@ -10,7 +10,7 @@ import re
 
 print(">>>>>>>>初始化:")
 dictNull = {}                                # 空字典
-print("dictNull = {}", dictNull)
+print("dictNull =", dictNull)
 dict1 = {'apple': 2, 'orange': [0, 1]}       # 嵌套
 print("dict1 = {'apple': 2, 'orange': [0, 1]} =>", dict1)
 
@@ -40,7 +40,7 @@ dict4.update(dict1)                           # 字典合并
 print("dict4.update(dict1) =>", dict4)
 del dict4['a']                                # 删除指定元素
 print("del dict4['a'] =>", dict4)
-print("字典视图: list(dict4) =>", list(dict4))          # 字典视图，字典的key组成的列表
+print("字典视图: list(dict4) =>", list(dict4))  # 字典视图，字典的key组成的列表
 
 
 print('\n')

@@ -3,7 +3,7 @@
 
 # 可变集合
 print('>>>>>>>>可变集合:')
-s = set('cheeseshop')
+s = set('cheeseshop')                  # set集合是不可重复的元素的集合
 print("s = set('cheeseshop') =>", s)
 s.add('test')
 s.add('e')
@@ -36,7 +36,7 @@ for v in sorted(albums):
     print('sorted =>', v)
 
 print('>>>enumerate输出:')
-for v in enumerate(albums):
+for v in enumerate(albums):                        # v 其实就是一个元组,里面有两个元素,第一个是编号，第二个是value值
     print('enumerate =>', v[0], v[1])
 
 

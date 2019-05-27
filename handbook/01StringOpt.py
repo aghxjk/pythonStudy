@@ -52,10 +52,10 @@ print('str1 + str2 = {0}'.format(strMerge))
 print('\n')
 print('>>>>>>>>字符串截取:')
 print('strMerge = {0}'.format(strMerge))
-print('strMerge[0:-1:1] = {0}'.format(strMerge[0:-1:1]))
-print('strMerge[0:-1:2] = {0}'.format(strMerge[0:-1:2]))
 str4 = strMerge[0:-1:1]                        # 字符串截取：Tom's cat : ab
 str5 = strMerge[0:-1:2]                        # 字符串截取：Tmsct:a
+print('strMerge[0:-1:1] = {0}'.format(str4))
+print('strMerge[0:-1:2] = {0}'.format(str5))
 
 print('\n')
 print('>>>>>>>>字符串长度计算:')
@@ -133,9 +133,12 @@ print('>>>>>>>字符串迭代表达式:')
 print([c * 2 for c in str3])                 # 迭代操作
 tmp = map(ord, str3)
 
+print('map(ord, str3))) = {0}'.format(list(tmp)))                       # ASCII转换成对应的字符编码
+
 for i in tmp:
     print('i = {0}'.format(i))
-print('map(ord, str3))) = {0}'.format(list(tmp)))                       # ASCII转换成对应的字符编码
+
+print('map(ord, str3))) = {0}'.format(list(tmp)))                       # 注意该输出内容
 
 
 ##################################

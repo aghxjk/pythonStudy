@@ -41,6 +41,9 @@ print('dir(merge0) =>', dir(merge0))                                       # 显
 print('\n')
 print('>>>>>>>>元组帮助手册:help(())')
 help(())                                    # 查看元组对象支持的操作
+
+print('\n')
+print('>>>>>>>>元组帮助手册:help(().index)')
 help(().index)
 
 
