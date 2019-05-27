@@ -9,6 +9,7 @@
         sorted(iterable, /, *, key=None, reverse=False)
         iter(iterable) -> iterator
         iter(callable, sentinel) -> iterator
+        input(prompt=None, /)
 
 
     class:
@@ -18,6 +19,19 @@
         zip(iter1 [,iter2 [...]]) --> zip object
         reversed(sequence, /)
         enumerate(iterable, start=0)
+        int([x]) -> integer
+        int(x, base=10) -> integer
+
+    内置数学函数:
+        pow(x, y, z=None, /)           Equivalent to x**y (with two arguments) or x**y % z (with three arguments)
+        abs(x, /)                      Return the absolute value of the argument.
+        round(number, ndigits=None)    Round a number to a given precision in decimal digits.
+        hex(number, /)                 Return the hexadecimal representation of an integer.
+        bin(number, /)                 Return the binary representation of an integer.
+
+
+
+
 
     del
     lambda x : expression 冒号左边→想要传递的参数;冒号右边→想要得到的数（可能带表达式）

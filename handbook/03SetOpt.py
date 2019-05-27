@@ -8,6 +8,8 @@ print("s = set('cheeseshop') =>", s)
 s.add('test')
 s.add('e')
 print("s.add('test') \ns.add('e')\ns =", s)
+s = {'a', 'b', 'c', 'd'}
+print("s = {'a', 'b', 'c', 'd'} =>", s)
 
 
 # 不可变集合
