@@ -31,6 +31,12 @@ with open(fileName, 'r', buffering=4096, encoding='utf-8') as linesBuffer:
     for line in linesBuffer:
         print(line, end='')
 
+print('\n')
+print('>>>>>>>> 文件方式(新玩法):')
+for line in [line.rstrip() for line in open(fileName)]:
+    print(line)
+
+
 ####################################################
 #                    File 说明                      #
 ####################################################

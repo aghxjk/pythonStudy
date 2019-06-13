@@ -10,6 +10,13 @@
         iter(iterable) -> iterator
         iter(callable, sentinel) -> iterator
         input(prompt=None, /)
+        sum(iterable, start=0, /)
+        any(iterable, /)
+        all(iterable, /)
+        max(iterable, *[, default=obj, key=func]) -> value
+        max(arg1, arg2, *args, *[, key=func]) -> value
+        min(iterable, *[, default=obj, key=func]) -> value
+        min(arg1, arg2, *args, *[, key=func]) -> value
 
 
     class:
