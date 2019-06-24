@@ -26,4 +26,6 @@ print('*' * 20)
 t = mytest()
 
 for i in t:
-    print(i,',')
+    print(i, ',')
+
+
