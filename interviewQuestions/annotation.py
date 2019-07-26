@@ -6,7 +6,7 @@ import time
 
 def runtime(function):
     def get_now_time():
-        print(time.time())
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         function()
 
     return get_now_time
@@ -15,6 +15,7 @@ def runtime(function):
 @runtime
 def run():
     print('run')
+    print('-' * 20)
 
 
 run()
@@ -27,7 +28,7 @@ run()
 
 def runtime_1(func):
     def get_now_time(*args):
-        print(time.time())
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         func(*args)
 
     return get_now_time
@@ -36,6 +37,7 @@ def runtime_1(func):
 @runtime_1
 def run1(i):
     print(i)
+    print('-' * 20)
 
 
 run1(100)
@@ -48,7 +50,7 @@ run1(100)
 
 def runtime_2(func):
     def get_now_time(**kwargs):
-        print(time.time())
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         func(**kwargs)
 
     return get_now_time
@@ -57,6 +59,7 @@ def runtime_2(func):
 @runtime_2
 def run2(a):
     print(a)
+    print('-' * 20)
 
 
 run2(a='hahah')
@@ -69,7 +72,7 @@ run2(a='hahah')
 
 def runtime_3(func):
     def get_now_time(name, **kwargs):
-        print(time.time())
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         func(name, **kwargs)
 
     return get_now_time
@@ -78,6 +81,7 @@ def runtime_3(func):
 @runtime_3
 def run3(name, **kwargs):
     print('{0}, {1}'.format(name, kwargs['a']))
+    print('-' * 20)
 
 
 run3("hahah", a='ccc')
