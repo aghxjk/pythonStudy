@@ -57,8 +57,9 @@ def quick_sort(qlist):
     else:
         first = qlist[0]
         less = quick_sort([l for l in qlist[1:] if l < first])
-        more = quick_sort([m for m in qlist[1:] if m >= first ])
+        more = quick_sort([m for m in qlist[1:] if m >= first])
         return less + [first] + more
+
 
 list_to_sort = [1, 3, 9, 0, 2, 4, 5, 6, 10, 8, 99]
 quick_sort(list_to_sort)
