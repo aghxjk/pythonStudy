@@ -62,7 +62,7 @@ print('Json to Dict: dict6 =', dict6)
 
 print('\n')
 print(">>>>>>>>字典遍历:")
-for (x, y) in dict6.items():
+for x, y in dict6.items():
     print(x, y)
 
 
