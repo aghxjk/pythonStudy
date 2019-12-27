@@ -47,7 +47,7 @@ print("list2.append('end') =", list2)
 list2.insert(1, 'y')
 print("list2.insert(1, 'y') =", list2)
 print("list2.index('t') =", list2.index('t') if 't' in list2 else 'not Found')     # 查询't'所在的索引位置
-print("list2.count('t') =", list2.count('end'))                                    # 统计't'出现的次数
+print("list2.count('end') =", list2.count('end'))                                    # 统计't'出现的次数
 
 print('\n')
 print('>>>>>>>>list排序:')

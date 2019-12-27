@@ -135,9 +135,13 @@ tmp = map(ord, str3)
 
 print('map(ord, str3))) = {0}'.format(list(tmp)))                       # ASCII转换成对应的字符编码
 
+tmp = map(ord, str3)
 for i in tmp:
     print('i = {0}'.format(i))
 
+# tmp = map(ord, str3)
+# tmp 是一个基于yield的迭代器，在上面的for循环执行后，迭代器为空了
+# 所以下面的执行结果为空
 print('map(ord, str3))) = {0}'.format(list(tmp)))                       # 注意该输出内容
 
 
