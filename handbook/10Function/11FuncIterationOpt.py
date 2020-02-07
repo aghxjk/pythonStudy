@@ -18,7 +18,7 @@ print('res1.append(ord(x)) => ', res1)
 
 # 2.map方式:
 res2 = map(ord, 'abcdefg')
-print("map(ord, 'abcdefg') => ", res2)
+print("map(ord, 'abcdefg') => ", list(res2))
 
 # 3.列表解析表达式
 res3 = [ord(x) for x in 'abcdefg']
@@ -36,7 +36,7 @@ print('[x**2 for x in range(11) if (x % 2) == 0] => ', res1)
 
 # 等效的map调用
 res2 = map((lambda x: x**2), filter((lambda x: x % 2 == 0), range(11)))
-print('map((lambda x: x**2), filter((lambda x: x % 2 == 0), range(11))) => ', res2)
+print('map((lambda x: x**2), filter((lambda x: x % 2 == 0), range(11))) => ', list(res2))
 
 
 

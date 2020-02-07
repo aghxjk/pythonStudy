@@ -272,7 +272,7 @@ class StaticClass:
         StaticClass.numInstances += 1  # 类空间属性,所有的实例对象共享。相当于类的静态属性
         self.numInstance += 1  # 对象空间属性,属于每个对象实例自己的属性
         # 注意:
-        #     如果使用下面被注释的代码，是无法统计改类被实例化的次数的
+        #     如果使用下面被注释的代码，是无法统计该类被实例化的次数的
         # self.numInstances += 1
 
     @staticmethod

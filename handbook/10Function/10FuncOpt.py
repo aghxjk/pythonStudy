@@ -334,7 +334,7 @@ def print31(*args, sep=' ', end='\n', file=sys.stdout):
         first = False
 
     output += end
-    file.write('print30{0} => {1}'.format(tuple(args), output))
+    file.write('print31{0} => {1}'.format(tuple(args), output))
 
 
 print31('a', 'b', 'c', 'd')
