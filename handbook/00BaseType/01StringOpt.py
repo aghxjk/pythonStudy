@@ -46,7 +46,7 @@ str3 = u"abc"                                  # Unicode编码
 strRaw = r'C:\new\test.txt'                    # 字符串不会被转义,否则输出时会被转义为换行符和制表符
 print('strRaw = {0}'.format(strRaw))
 
-strMerge = str2 + " : " + str3                 # 字符串合并
+strMerge = str2 + " :" + str3                 # 字符串合并
 print('str1 + str2 = {0}'.format(strMerge))
 
 print('\n')
@@ -54,8 +54,16 @@ print('>>>>>>>>字符串截取:')
 print('strMerge = {0}'.format(strMerge))
 str4 = strMerge[0:-1:1]                        # 字符串截取：Tom's cat : ab
 str5 = strMerge[0:-1:2]                        # 字符串截取：Tmsct:a
+str6 = strMerge[0:-3]                          # 字符串截取：从头开始到倒数第三个字符之前
+str7 = strMerge[:]                             # 字符串完整拷贝
+str8 = strMerge[::-1]                          # 字符串逆序拷贝
+str9 = strMerge[:-5:-3]                        #
 print('strMerge[0:-1:1] = {0}'.format(str4))
 print('strMerge[0:-1:2] = {0}'.format(str5))
+print('strMerge[0:-3]   = {0}'.format(str6))
+print('strMerge[:]      = {0}'.format(str7))
+print('strMerge[::-1]   = {0}'.format(str8))
+print('strMerge[:-5:-3] = {0}'.format(str9))
 
 print('\n')
 print('>>>>>>>>字符串长度计算:')
