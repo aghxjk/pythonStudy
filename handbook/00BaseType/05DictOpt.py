@@ -18,7 +18,7 @@ print('\n')
 print(">>>>>>>>其它构造技术:")
 dict2 = dict.fromkeys(['a', 'b'], 'zzz')
 print("dict.fromkeys(['a', 'b'], 'zzz') =>", dict2)
-dict3 = dict(zip(['a', 'b', 'c'], [0, 1, 3]))  # zip得到2维元组列表(元组后面会讲到),然后再生成字典
+dict3 = dict(zip(['a', 'b', 'c'], [0, 1, 3]))  # zip得到2维元组列表,然后再生成字典
 print("dict(zip(['a', 'b', 'c'], [0, 1, 3])) =>", dict3)
 
 print('\n')

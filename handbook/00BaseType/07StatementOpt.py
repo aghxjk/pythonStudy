@@ -38,7 +38,7 @@ print('a, b, c, d = string => a={0}, b={1}, c={2}, d={3}'.format(a, b, c, d))
 print('\n')
 print('>>>>>>>> 增强赋值语句')
 L = [1, 2]
-L += [3, 4]                           # 增强赋值语句比普通赋值语句执行效率更高,python自动调用的事L.extend()方法
+L += [3, 4]                           # 增强赋值语句比普通赋值语句执行效率更高,python自动调用的是L.extend()方法
 print('L += [3, 4] => L = {0}'.format(L))
 
 print('\n')

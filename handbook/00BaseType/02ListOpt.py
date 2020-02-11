@@ -23,7 +23,7 @@ print("list(range(-4, 4)) = {0}".format(list5))
 
 print('\n')
 print('>>>>>>>>索引与分片:')
-list6 = list2[0:-1:2]                         # 索引与分片
+list6 = list2[::2]                         # 索引与分片
 print('list2[0:-1:2] = ', list6, 'and length =', list3.__len__())           # 列表长度
 
 print('\n')
